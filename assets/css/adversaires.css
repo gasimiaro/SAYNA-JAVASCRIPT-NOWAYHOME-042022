@@ -129,7 +129,14 @@ h1 {
 }
 
 #card-section .card-hero {
+    border: 3px solid var(--black-ad-color);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 300px;
+    height: 600px;
     margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px var(--black-ad-color);
 }
 
 #card-section .card-hero .card-image {
@@ -138,11 +145,16 @@ h1 {
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
-    position: relative;
-    border-left: 6px solid var(--black-ad-color);
-    border-right: 6px solid var(--black-ad-color);
-    border-top: 6px solid var(--black-ad-color);
 }
+
+
+/* #card-section .card-hero:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: var(--white-ad-color);
+    background-color: var(--black-ad-color);
+} */
 
 .triangle {
     width: 0;
@@ -192,9 +204,9 @@ h1 {
     font-weight: bold;
     padding: 15px;
     margin-top: -20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-left: 6px solid var(--black-ad-color);
-    border-right: 6px solid var(--black-ad-color);
+    /* background: rgba(0, 0, 0, 0.7); */
+    /* border-left: 6px solid var(--black-ad-color); */
+    /* border-right: 6px solid var(--black-ad-color); */
 }
 
 #card-section .card-hero .card-content {
@@ -208,7 +220,7 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0px 4px 6px var(--black-ad-color);
-    border-left: 6px solid var(--black-ad-color);
+    /* border-left: 6px solid var(--black-ad-color); */
     border-right: 6px solid var(--black-ad-color);
     border-bottom: 6px solid var(--black-ad-color);
 }
