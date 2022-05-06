@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
 
         let scroll = $(window).scrollTop();
-        $('.spider').css('top', `${scroll}px`);
+        $('.spider').css('top', scroll + 'px ');
     })
 
 

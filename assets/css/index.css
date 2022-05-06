@@ -12,11 +12,14 @@
 .spider {
     position: absolute;
     left: 50%;
-    top: 20%;
+    margin: 60px;
+    top: 2vh;
+    padding: 0;
     background-image: url(../img/home2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 760px;
+    height: 600px;
+    border: 1px solid green;
     z-index: 1;
 }
 
