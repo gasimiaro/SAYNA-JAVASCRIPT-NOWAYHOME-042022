@@ -48,4 +48,21 @@ $(document).ready(function() {
         }
     })
 
+
+
 });
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+// slide heros
+var i = 0;
+var images = ['1.png', '2.png', '3.png', '4.png', '5.png'];
+
+function slideimg() {
+    document.slider.src = './assets/img/heroslider' + images[i];
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout("slideimg()", 2000);
+}
+window.load = slideimg();
