@@ -33,5 +33,19 @@ $(document).ready(function() {
         }
     })
 
+    $('.zoom').on({
+        mouseenter: function() {
+            $(this).css({
+                "transform": "scale(1.1)",
+                "transition": " all 0.5s ease-in-out"
+            })
+        },
+        mouseleave: function() {
+            $(this).css({
+                "transform": "scale(1)",
+                "transition": " all 0.5s ease-in-out"
+            })
+        }
+    })
 
 });
