@@ -84,8 +84,8 @@ footer .brand img:nth-child(2) {
     background: url(../img/home1.png), linear-gradient(#0d0101, #580909, #a61111);
     height: 800px;
     background-repeat: no-repeat;
-    background-position: 95%;
-    background-position-y: 10%;
+    background-position: -230%;
+    background-position-y: 10% !important;
 }
 
 #hero div {

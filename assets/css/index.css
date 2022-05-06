@@ -10,10 +10,14 @@
 }
 
 .spider {
+    position: absolute;
+    left: 50%;
+    top: 20%;
     background-image: url(../img/home2.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 760px;
+    z-index: 1;
 }
 
 .fa-heart {

@@ -1,4 +1,14 @@
 $(document).ready(function() {
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    // scroll spiderman
+
+    $(window).scroll(function() {
+
+        let scroll = $(window).scrollTop();
+        $('.spider').css('top', `${scroll}px`);
+    })
+
+
     // compte à rebours
     var countDownDate = new Date("May 4, 2022 08:00:00").getTime();
     var x = setInterval(function() {
@@ -19,7 +29,8 @@ $(document).ready(function() {
             $("#timer").text("EXPIRED");
         }
     }, 1000);
-    // ****************************************************************************************************
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     // Audio content
     let heart = document.getElementById('heart');
     heart.addEventListener('click', myFav);
@@ -107,7 +118,8 @@ $(document).ready(function() {
         audio.currentTime = (clickX / width) * duration
 
     }
-    // ****************************************************************************************************
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     // Hover on buttons
     $(".button2").on({
         mouseenter: function() {
@@ -141,7 +153,8 @@ $(document).ready(function() {
             });
         },
     });
-    // ****************************************************************************************************
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     $('.card-img-top').hover(function() {
         $(this).addClass('transition');
     }, function() {
@@ -176,7 +189,8 @@ $(document).ready(function() {
                 $('.card-text3').nextUntil('.button1').fadeOut(1000)
             }
         })
-        // ****************************************************************************************************
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
         // social media hover
     $('.mediahover').on({
             mouseenter: function() {
@@ -186,8 +200,8 @@ $(document).ready(function() {
                 $(this).css('color', 'black')
             }
         })
-        // ****************************************************************************************************
-    const popUpBox = document.getElementById('popUpBox');
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&    const popUpBox = document.getElementById('popUpBox');
     const closeBtn = document.querySelector('.close');
     var save = document.getElementById('save');
     var danger = document.getElementById('danger');
@@ -239,5 +253,13 @@ $(document).ready(function() {
         left: '20px'
     }, 5000)
     $('.description').fadeIn(3500)
+
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //background MARVEL animation
+    $('#hero').animate({
+        backgroundPosition: '95%'
+    }, 5000)
+
+
 
 });
