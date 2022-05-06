@@ -1,60 +1,92 @@
-:root{
+:root {
     --primary-ad-color: #b11313;
     --black-ad-color: #000000;
     --white-ad-color: #ffffff;
-    --blue-color:#114c92;
+    --blue-color: #114c92;
 }
 
-#hero{
-    background-image: url("../img/img1.png");
-    background-color: var(--primary-ad-color);
-    height: 870px;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size:auto;
-}
-.titre{
+.titre {
     margin-bottom: 50px;
 }
 
-#lesspiderman{
-    background-color: var(--primary-ad-color);
+.spider {
+    background-image: url(../img/home2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 760px;
 }
-#lesspiderman h1{
+
+.fa-heart {
+    cursor: pointer;
+}
+
+.audio-container {
+    width: 470px;
+}
+
+#cover {
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.progress {
+    max-width: 470px;
+    height: 5px;
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.progress-container {
+    background-color: #ffffff;
+}
+
+#prev,
+#play,
+#next {
+    cursor: pointer;
+}
+
+#lesspiderman {
+    background-color: #a61111;
+}
+
+#lesspiderman h1 {
     font-size: 35px;
 }
-.cta{
+
+.cta {
     margin-top: 70px;
     margin-bottom: 40px;
 }
-.button1{
+
+.button1 {
     background-color: var(--white-ad-color);
     color: var(--primary-ad-color);
     border-radius: 40px;
     padding: 15px 20px;
+    font-weight: bold;
 }
-.cta .button2{
+
+.cta .button2 {
     border: var(--white-ad-color) 2px solid;
     color: var(--white-ad-color);
     border-radius: 40px;
     padding: 15px 20px;
+    font-weight: bold;
 }
 
-.card-text{
+.card-text {
     text-align: justify;
 }
-/* .card-unique{
-    width: 30%;
-    margin-right: auto;
-} */
-.card-unique ul{
+
+.card-unique ul {
     list-style-type: disc;
     margin-left: 20px;
     padding: 0;
     margin: 0;
 }
 
-#spiderman{
+#spiderman {
     color: var(--white-ad-color);
     background-color: var(--blue-color);
     height: 550px;
@@ -63,20 +95,71 @@
     background-size: auto;
     background-repeat: no-repeat;
     padding: 20px 0;
+    position: relative;
 }
 
-h1{
+h1 {
+    position: relative;
+    left: -105%;
     font-family: 'far_from_homecomingregular';
     font-size: 35px;
     margin-bottom: 30px;
 }
 
-#spiderman form{
+#spiderman form {
     display: flex;
     flex-direction: column;
 }
 
-#spiderman .spiderman-formulaire .form-spiderman, input[type=submit]{
+.become-spiderman {
+    border-radius: 20px;
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-color: none;
+}
+
+#popUpBox {
+    top: 25%;
+    left: 48%;
+    width: 700px;
+    max-width: 900px;
+    position: absolute;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    opacity: .7;
+    display: none;
+    z-index: 7;
+    line-height: .5em;
+    box-shadow: 0 0 30px 0 black;
+    transform: translate(-50% -50%);
+    background-color: var(--blue-color);
+}
+
+#save {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.close {
+    border: 2px solid;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+#danger {
+    color: #b11313;
+}
+
+.become-spiderman::placeholder {
+    color: #000000;
+}
+
+#spiderman .spiderman-formulaire .form-spiderman,
+input[type=submit] {
     width: 375px;
     border-radius: 30px;
     color: var(--white-ad-color);
@@ -85,13 +168,13 @@ h1{
     margin: 10px auto;
 }
 
-input[type=submit]{
+input[type=submit] {
     width: 200px;
     background-color: transparent;
     padding: 10px 20px;
 }
 
-#newsletter{
+#newsletter {
     background-color: var(--primary-ad-color);
     height: 550px;
     background-image: url("../img/img6.png");
@@ -101,11 +184,12 @@ input[type=submit]{
     padding: 20px 0;
 }
 
-.newsletter-formulaire{
+.newsletter-formulaire {
     margin-top: 70px;
 }
 
-.newsletter-formulaire input[type=text],.newsletter-formulaire input[type=email]{
+.newsletter-formulaire input[type=text],
+.newsletter-formulaire input[type=email] {
     border-radius: 20px;
     width: 400px;
     margin-bottom: 30px;
@@ -113,11 +197,12 @@ input[type=submit]{
     background-color: #ffffff00;
     border-color: white;
 }
-::placeholder{
+
+::placeholder {
     color: white;
 }
 
-.newsletter-formulaire input[type=submit]{
+.newsletter-formulaire input[type=submit] {
     background-color: white;
     color: #000000;
 }
